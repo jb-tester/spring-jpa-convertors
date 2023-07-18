@@ -2,6 +2,12 @@ package com.mytests.jpa.springjpaconvertors;
 
 import jakarta.persistence.*;
 
+/**
+ * *
+ * <p>Created by irina on 10/18/2021.</p>
+ * <p>Project: spring-jpa-convertors</p>
+ * *
+ */
 @Entity
 public class Person {
 
@@ -10,10 +16,12 @@ public class Person {
     private Long id;
     private String name;
 
+    // annotation is NOT required if the converter class has @Converter(autoApply = true)
     //@Convert(converter = GroupNumberAttributeConverter.class)
     private GroupNumber gr;
 
-    //@Convert(converter = PhoneAttributeConverter.class)
+    // annotation is required if the converter class has @Converter(autoApply = false)
+    @Convert(converter = PhoneAttributeConverter.class)
     private Phone phone;
 
    public GroupNumber getGr() {

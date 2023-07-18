@@ -4,6 +4,12 @@ package com.mytests.jpa.springjpaconvertors;
 import jakarta.persistence.AttributeConverter;
 import jakarta.persistence.Converter;
 
+/**
+ * *
+ * <p>Created by irina on 10/18/2021.</p>
+ * <p>Project: spring-jpa-convertors</p>
+ * *
+ */
 @Converter(autoApply = true)
 public class GroupNumberAttributeConverter implements AttributeConverter<GroupNumber, Integer> {
 

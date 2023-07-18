@@ -1,0 +1,49 @@
+
+### Add with invalid phone
+POST http://localhost:8080/add
+Content-Type: application/json
+
+{
+  "name": "Maria",
+  "groupId": {
+    "value": 3
+  },
+  "phone": {
+    "phone": "88812345"
+  }
+}
+
+### Add with invalid group
+POST http://localhost:8080/add
+Content-Type: application/json
+
+{
+  "name": "Marina",
+  "groupId": {
+    "value": 5
+  },
+  "phone": {
+    "phone": "8881234"
+  }
+}
+
+### add correct entry
+POST http://localhost:8080/add
+Content-Type: application/json
+
+{
+  "name": "Marianna",
+  "groupId": {
+    "value": 1
+  },
+  "phone": {
+    "phone": "8881234"
+  }
+}
+
+### get all
+GET http://localhost:8080/all
+
+
+
+###
