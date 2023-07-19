@@ -32,12 +32,12 @@ POST http://localhost:8080/add
 Content-Type: application/json
 
 {
-  "name": "Marianna",
+  "name": "Nick",
   "groupId": {
-    "value": 1
+    "value": 2
   },
   "phone": {
-    "phone": "8881234"
+    "phone": "8881235"
   }
 }
 

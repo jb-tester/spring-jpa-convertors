@@ -1,8 +1,9 @@
 package com.mytests.jpa.springjpaconvertors;
 
 
-import jakarta.persistence.AttributeConverter;
-import jakarta.persistence.Converter;
+import jakarta.persistence.*;
+
+//import javax.persistence.*;
 
 /**
  * *

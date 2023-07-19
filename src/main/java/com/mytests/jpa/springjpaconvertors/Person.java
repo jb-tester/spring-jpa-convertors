@@ -1,6 +1,7 @@
 package com.mytests.jpa.springjpaconvertors;
 
 import jakarta.persistence.*;
+//import javax.persistence.*;
 
 /**
  * *
@@ -8,6 +9,7 @@ import jakarta.persistence.*;
  * <p>Project: spring-jpa-convertors</p>
  * *
  */
+@Table(name = "person")
 @Entity
 public class Person {
 
@@ -56,11 +58,6 @@ public class Person {
         this.name = name;
     }
 
-    public Person(String name, int gr, String phone) {
-        this.name = name;
-        this.gr = new GroupNumber(gr);
-        this.phone = new Phone(phone);
-    }
 
     public Person(String name, GroupNumber gr, Phone phone) {
         this.name = name;
